@@ -1,35 +1,22 @@
 # MyReads Project
 
-## TL;DR
+This application allows you to place selected books into a designated shelf. Users can also search the Udacity database for books to add to their initial book shelfs. There are two pages. The Homepage displays the three bookshelfs, currently reading, want to read, and read. The search page will allow the user to search for books.
 
-To get started developing right away:
+## Installation
 
-* install all project dependencies with `npm install`
-* start the development server with `npm start`
+Access the projects folder and run `npm install` from the command line to install the dependencies. Once installed run the command `npm start` to load application on local host 3000.
 
-## What You're Getting
-```bash
-├── CONTRIBUTING.md
-├── README.md - This file.
-├── SEARCH_TERMS.md # The whitelisted short collection of available search terms for you to use with your app.
-├── package.json # npm package manager file. It's unlikely that you'll need to modify this.
-├── public
-│   ├── favicon.ico # React Icon, You may change if you wish.
-│   └── index.html # DO NOT MODIFY
-└── src
-    ├── App.css # Styles for your app. Feel free to customize this as you desire.
-    ├── App.js # This is the root of your app. Contains static HTML right now.
-    ├── App.test.js # Used for testing. Provided with Create React App. Testing is encouraged, but not required.
-    ├── BooksAPI.js # A JavaScript API for the provided Udacity backend. Instructions for the methods are below.
-    ├── icons # Helpful images for your app. Use at your discretion.
-    │   ├── add.svg
-    │   ├── arrow-back.svg
-    │   └── arrow-drop-down.svg
-    ├── index.css # Global styles. You probably won't need to change anything here.
-    └── index.js # You should not need to modify this file. It is used for DOM rendering only.
-```
+## How to use
 
-Remember that good React design practice is to create new JS files for each component and use import/require statements to include them where they are needed.
+### Choosing which shelf to send a book to
+Once loaded you may choose which shelf to send a book to by clicking on the green circle with a down arrow of any book.
+
+### Search for a book to add to shelf
+To access the search page select the plus icon located at the bottom right of the page. Type in the search field for possible books to be found. No results will be displayed if the input field is blank or the query you've typed does not exist.
+
+The process of adding a book to a shelf is identical to the process described in the previous section. Once the option is selected the book will be displayed on the selected shelf on the main page of the application.
+
+To return to the main page you may use the back arrow in the input area at the top or the browsers back arrow.
 
 ## Backend Server
 
