@@ -16,7 +16,6 @@ To simplify your development process, we've provided a backend server for you to
 * [`getAll`](#getall)
 * [`update`](#update)
 * [`search`](#search)
-
 ### `getAll`
 
 Method Signature:

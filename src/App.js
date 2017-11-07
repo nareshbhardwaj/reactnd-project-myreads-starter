@@ -29,6 +29,11 @@ searchQuery = (query) => {
   if(query){
       BooksAPI.search(query, this.MAX_BOOKS_ON_SEARCH_PAGE).then((books) => {
           if(books.length){
+            books.forEach((book, i) => {
+              let searchBook = this.state.mainPageBooks.find((b) => b.id === book.id);
+              book.shelf = searchBook ? searchBook.shelf : 'none';
+              books[i] = book;
+            });
               this.setState({
                 searchPageBooks : books
               });
